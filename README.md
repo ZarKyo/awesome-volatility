@@ -11,7 +11,7 @@ Volatility is a framework for extracting digital artifacts from volatile memory 
 - [Volatility 2](https://github.com/volatilityfoundation/volatility) - Volatility2 framework
 - [AutoVolatility](https://github.com/carlospolop/autoVolatility/tree/master) - Run several volatility plugins at the same time
 
-## Profiles
+### Profiles
 
 - [Linux profiles (Debian, Ubuntu, Fedora, Almalinux, RockyLinux)](https://github.com/Abyss-W4tcher/volatility2-profiles)
 - [MacOS & Linux profiles](https://github.com/volatilityfoundation/profiles)
@@ -60,6 +60,10 @@ Volatility is a framework for extracting digital artifacts from volatile memory 
 - [malprocfind](https://github.com/volatilityfoundation/community/blob/master/CsabaBarta/malprocfind.py) - Finds malicious processes based on discrepancies from observed, normal behavior and properties
 - [SchTasks](https://github.com/volatilityfoundation/community/blob/master/BartoszInglot/schtasks.py) - Scans for and parses potential Scheduled Task (.JOB) files
 - [Other plugins 1](https://github.com/volatilityfoundation/community)
+
+### Books
+
+- [The Art of Memory Forensics](https://repo.zenk-security.com/Forensic/The%20Art%20of%20Memory%20Forensics%20-%20Detecting%20Malware%20and%20Threats%20in%20Windows,%20Linux,%20and%20Mac%20Memory%20(2014).pdf) - Detectiong malware and threats in Windows, Linux, and Mac memory
 
 ---
 
