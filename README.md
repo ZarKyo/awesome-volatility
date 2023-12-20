@@ -106,6 +106,7 @@ Volatility3 made a move away from profiles and instead uses **[Symbol Tables](ht
 - [rootkit](https://github.com/AsafEitani/rootkit_plugins/) - plugins that detect advanced rootkit hooking methods.
 - [Hyper-V](https://github.com/gerhart01/Hyper-V-Tools/tree/main/Plugin_for_volatility) - Hyper-V memory plugin for volatility
 - [CheckSpoof](https://github.com/orchechik/check_spoof) - A useful and old technique analysts use for detecting anomalous activity is identifying parent-child relationships. Today attackers can change the Parent PID (PPID) quite
+- [volatility-docker](https://github.com/amir9339/volatility-docker) - A suite of Volatility 3 plugins for memory forensics of Docker containers
 - [Others plugin 1](https://github.com/f-block/volatility-plugins)
 - [Others plugin 2](https://github.com/volatilityfoundation/community3)
 
