@@ -82,6 +82,11 @@ Volatility3 made a move away from profiles and instead uses **[Symbol Tables](ht
 - [Windows Symbol Tables](https://github.com/JPCERTCC/Windows-Symbol-Tables) - Japan CERT
 - [Linux symbols (Debian, Ubuntu, Almalinux, RockyLinux)](https://github.com/Abyss-W4tcher/volatility3-symbols)
 
+### New capabilities
+
+- [Remote Analysis on Cloud Object-Storage](https://github.com/forensicxlab/volatility3/tree/feature/bucket-s3)
+- [Modern Windows Hibernation File Analysis](https://github.com/forensicxlab/volatility3/tree/feature/hibernation-layer)
+
 ### Plugins
 
 - [Inodes](https://github.com/forensicxlab/volatility3_plugins/blob/main/inodes.py) - The plugin is a pushed verion of the lsof plugin extracting inode metadata information from each files.
@@ -107,6 +112,25 @@ Volatility3 made a move away from profiles and instead uses **[Symbol Tables](ht
 - [Hyper-V](https://github.com/gerhart01/Hyper-V-Tools/tree/main/Plugin_for_volatility) - Hyper-V memory plugin for volatility
 - [CheckSpoof](https://github.com/orchechik/check_spoof) - A useful and old technique analysts use for detecting anomalous activity is identifying parent-child relationships. Today attackers can change the Parent PID (PPID) quite
 - [volatility-docker](https://github.com/amir9339/volatility-docker) - A suite of Volatility 3 plugins for memory forensics of Docker containers
+- [eBPF programs & rootkit detection](https://github.com/AsafEitani/ebpf_programs_plugin) - Detects loaded eBPF programs and indicates for each if they are suspected as an eBPF rootkit
+- [PackerList](https://github.com/memoryforensics1/Volatility.PE-Shellcode) - This plugin helps investigators look for indications of packed processes
+- [MasqueradeProcess](https://github.com/memoryforensics1/Volatility.PE-Shellcode) - Compares the OriginalFileName found in FileVersionInformation with the name of the running process, and it highlights any mismatches
+- [DirectSyscalls](https://github.com/memoryforensics1/Volatility.PE-Shellcode) - Looks for attempts to avoid EDR hooks by implementing the system call stub in shellcode memory.
+- [ApiHash](https://github.com/memoryforensics1/Volatility.PE-Shellcode) - Scans for API hashes used as arguments to functions in memory regions that wouldn’t typically have executable code. It then attempts to resolve the hashes leveraging a publicly available hash database
+- [Alternate Data Stream Scanning Plugin](https://github.com/forensicxlab/volatility3/blob/feature/ADS/volatility3/framework/plugins/windows/mftscan.py) - Scans for MFT entries looking for alternate data streams that may be cached in memory
+- [Keepass Plugin](https://github.com/forensicxlab/volatility3_plugins/blob/main/keepass.py) - Allows an investigator to recover the plaintext password from a memory sample
+- [Windows Import Address Table Plugin](https://github.com/forensicxlab/volatility3/tree/feature/IAT) - The Import Address Table (IAT) plugin reconstructs the IAT from process-executable images in Windows memory samples.
+- [notepad Plugin](https://github.com/spitfirerxf/vol3-plugins) - Plugin to determine the approximate content of an unsaved Notepad text based on biggest VAD content that Notepad allocates
+- [kusertime Plugin](https://github.com/spitfirerxf/vol3-plugins) - Plugin to determine the approximate uptime of a machine
+- [evtxlog Plugin](https://github.com/spitfirerxf/vol3-plugins) - Plugin to extract the extractable EVTX files and spit it out to console (very verbose, immediately pipe it to a file to ease investigation)
+- [sticky Plugin](https://github.com/spitfirerxf/vol3-plugins²) - Plugin to extract the content for Sticky Notes on both Win10 and Win7 (Note: not always working, depends on whether the machine cached the sticky note file or not)
+- [bpf_graph Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_graph.py) - Helps visualize the state of the BPF subsystem as a graph
+- [eBPF suite - bpf_listlinks Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_listlinks.py) - Displays the list of all BPF links in the memory sample
+- [eBPF suite - bpf_listmaps Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_listmaps.py) - Enumerates the list of BPF maps that are currently loaded into the kernel. It simulates the functionality of the map subcommand of bpftool.
+- [eBPF suite - bpf_listprocs Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_listprocs.py) - Displays a list of processes that hold BPF objects via a file descriptor.
+- [eBPF suite - bpf_listprogs Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_listprogs.py) - Displays a list of the BPF programs that are currently loaded into the kernel. It simulates the functionality of the prog subcommand of bpftool.
+- [eBPF suite - bpf_lsm Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_lsm.py) - Attempts to enumerate each LSM hook with attached BPF programs
+- [eBPF suite - bpf_netdev Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_netdev.py)
 - [Others plugin 1](https://github.com/f-block/volatility-plugins)
 - [Others plugin 2](https://github.com/volatilityfoundation/community3)
 
@@ -118,6 +142,7 @@ Volatility3 made a move away from profiles and instead uses **[Symbol Tables](ht
 
 ## Challenges
 
+- [2023 Volatility Plugin Contest](https://volatilityfoundation.org/the-2023-volatility-plugin-contest-results-are-in/)
 - [2022 Volatility Plugin Contest](https://volatility-labs.blogspot.com/2022/07/the-10th-annual-volatility-plugin-contest.html)
 - [2021 Volatility Plugin Contest](https://volatility-labs.blogspot.com/2022/02/the-2021-volatility-plugin-contest-results.html)
 - [2020 Volatility Plugin Contest](https://volatility-labs.blogspot.com/2020/11/the-2020-volatility-plugin-contest-results.html)
