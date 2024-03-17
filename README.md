@@ -80,7 +80,7 @@ Volatility3 made a move away from profiles and instead uses **[Symbol Tables](ht
 ### Symbol
 
 - [Windows Symbol Tables](https://github.com/JPCERTCC/Windows-Symbol-Tables) - Japan CERT
-- [Linux symbols (Debian, Ubuntu, Almalinux, RockyLinux)](https://github.com/Abyss-W4tcher/volatility3-symbols)
+- [Linux symbols (Debian, Ubuntu, Almalinux, RockyLinux, MacOS)](https://github.com/Abyss-W4tcher/volatility3-symbols)
 
 ### New capabilities
 
@@ -131,6 +131,9 @@ Volatility3 made a move away from profiles and instead uses **[Symbol Tables](ht
 - [eBPF suite - bpf_listprogs Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_listprogs.py) - Displays a list of the BPF programs that are currently loaded into the kernel. It simulates the functionality of the prog subcommand of bpftool.
 - [eBPF suite - bpf_lsm Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_lsm.py) - Attempts to enumerate each LSM hook with attached BPF programs
 - [eBPF suite - bpf_netdev Plugin](https://github.com/vobst/BPFVol3/blob/main/src/plugins/bpf_netdev.py)
+- [check_ftrace Plugin](https://github.com/Abyss-W4tcher/volatility-scripts/tree/master/Volatility_contest_2023) - Plugins to help detecting Linux Rootkits
+- [check_unlinked_modules Plugin](https://github.com/Abyss-W4tcher/volatility-scripts/tree/master/Volatility_contest_2023) - Plugins to help detecting Linux Rootkits
+- [check_tracepoints Plugin](https://github.com/Abyss-W4tcher/volatility-scripts/tree/master/Volatility_contest_2023) - Plugins to help detecting Linux Rootkits
 - [Others plugin 1](https://github.com/f-block/volatility-plugins)
 - [Others plugin 2](https://github.com/volatilityfoundation/community3)
 
